@@ -16,3 +16,11 @@ let isLoggedIn = "" //it is give in output
 let booleanIsLoggedIn = Boolean(isLoggedIn)
 console.log(typeof(booleanIsLoggedIn))
 console.log(booleanIsLoggedIn)
+console.log(isLoggedIn)
+
+
+// change the number into string...
+let somenumber = 33;
+let string_number = String(somenumber);
+console.log(string_number);
+console.log(typeof(string_number));
