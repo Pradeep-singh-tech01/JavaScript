@@ -24,3 +24,15 @@ let somenumber = 33;
 let string_number = String(somenumber);
 console.log(string_number);
 console.log(typeof(string_number));
+
+// ---> Raference non Primitive:
+// ---> object,aaray,function::::
+const heros = ["Shaktiman" , "Naagraj", "Doga"]
+let obj1 = {
+    name:"Pradeep",
+    age: 20,
+
+
+}
+
+console.log(typeof obj1)

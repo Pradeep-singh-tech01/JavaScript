@@ -12,7 +12,10 @@
 //console.log(2 > "1"); 
 
 
-console.log(null > 0); //=> null refers to the empty value
-console.log(null == 0);
-console.log(null >= 0);
+// console.log(null > 0); => null refers to the empty value
+// console.log(null == 0);
+// console.log(null >= 0);
 
+// === *THIS IS KNOWN AS STRICT OPERATATOR
+
+//console.log("2" === 2);  => false because it checks datatype and everything...
