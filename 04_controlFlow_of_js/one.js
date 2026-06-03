@@ -135,3 +135,11 @@ if(Object.keys(obj1).length === 0){
     console.log("ther is no value");
     
 }
+
+
+// Nullish Colescing Operator (??) : null undefined 
+
+let val1;
+// val1 = 5??10
+val1 = null ?? 15
+console.log(val1)
