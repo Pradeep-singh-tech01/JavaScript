@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM  events</title>
+</head>
+<body style="background-color: #414141; color: aliceblue;">
+    <h2>Amazing images</h2>
+    <div>
+        <ul id="images"> 
+
+            <li><img width="200px" height="200px" id="img1" src="pexels-chris-f-38966-7752991.jpg" alt=""></li>
+         
+            <li><img width="200px" height="200px" id="img2" src="pexels-eliezer-fernandes-515183518-24284863.jpg" alt=""></li>
+         
+            <li><img width="200px" height="200px" id="img3" src="pexels-hatice-baran-153179658-29175338.jpg" alt=""></li>
+         
+            <li><img width="200px" height="200px" id="img4" src="pexels-jterrazz-15011656.jpg" alt=""></li>
+         
+            <li><img width="200px" height="200px" id="img5" src="pexels-soc-nang-d-ng-2150345854-33297749.jpg" alt=""></li>
+             
+            <li><a  style="color: beige;" href="https://google.com" id="google">Google</a></li>
+       
+        </ul>
+    </div>
+
+    <script>
+        document.getElementById('img3').addEventListener('click',function(){
+            alert("image3 has been clicked ")
+        })
+    </script>
+</body>
+</html> 
