@@ -26,9 +26,69 @@
     </div>
 
     <script>
-        document.getElementById('img3').addEventListener('click',function(){
-            alert("image3 has been clicked ")
+
+        // document.getElementById('img3').addEventListener('click', function(){
+        //     alert('img3 is clicked now')
+        // })
+        
+
+        // there are one false parameter is add in addEventListener 
+
+        // attachEvent ... this is used in earlier time 
+
+
+        // type, timestamp , preventedDEfault.
+        // target, toElement, scrElement, currentTarget..
+        // clientX, clientY, screenX, screenY
+        // altKey, ctrlKey, shiftkey, keyCode
+        document.getElementById('img3').addEventListener('click',function(e){
+            //console.log(e)
         })
+
+
+        // EVENT PROPOGATION............>>>>>>>>>>>>>
+        // aur kaise hm use rok sakte h 
+
+        //  document.getElementById('images').addEventListener('click',function(e){
+        //     console.log('images are clicked inside the ul')
+        // }, false)
+        
+        //  document.getElementById('img3').addEventListener('click',function(e){
+        //     console.log('img3 is clicked now')
+        //     e.stopPropagation()
+        //     // jaise hi is method ka use karenge element bubble krke upr nhi jayega.... 
+        // }, false)
+        
+        // // event propogation me bubbling hota h jaise koi bhi element inside se outside work krta h phle kaam inner me hoga phir outer me jaise phle image phir li aur phir ul.
+
+        // document.getElementById('google').addEventListener('click', (e)=>{
+        //     e.preventDefault()
+        //     console.log("google clicked");
+        //     e.stopPropagation()
+            
+        // }, false)
+
+
+        // document.querySelector('#images').addEventListener('click',function(e){
+        //     console.log(e.target.parentNode)
+
+        //     let removeIt = e.target.parentNode
+        //     removeIt.remove()
+        // })
+
+
+        document.querySelector('#images').addEventListener('click',function(e){
+            console.log(e.target.tagName);
+            if(e.target.tagName === 'IMG'){
+                console.log(e.target.id);
+                
+                let removeIt = e.target.parentNode
+                removeIt.remove()
+            }
+
+            
+        })
+
     </script>
 </body>
 </html> 
