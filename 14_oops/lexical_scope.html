@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // function outer(){
+    //     let username = "Pradeep"
+    //     function inner(){
+    //         console.log("inner", username)
+    //     }
+    //     inner()
+    // }
+    // outer()
+    // console.log("outer", username)
+
+    function makeFunc(){
+        const name = "Pradeep"
+
+        function display(){
+            console.log(name)
+        }
+        return display
+
+    }
+    const user = makeFunc()
+    user()
+</script>
+</html>
